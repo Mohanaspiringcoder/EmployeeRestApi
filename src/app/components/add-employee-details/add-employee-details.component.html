@@ -1,0 +1,26 @@
+
+
+
+<body>
+ <form #SPForm="ngForm" (ngSubmit) ="onSubmit()">
+<label> <b>Employee Id</b> </label> <br>
+    <input type="number" name="employeeNumber" [(ngModel)] ="employee.employeeNumber">    
+    <br>   
+    <label> <b>Employee Name</b> </label> <br>
+    <input type="text"  name="employeeName" [(ngModel)] ="employee.employeeName">    
+    <br> 
+    <label> <b>Job</b> </label> <br>
+    <input type="text"  name="job" [(ngModel)] ="employee.job">    
+    <br> 
+    <label> <b>Hire Date</b> </label> <br>
+    <input type="date"  name="hiredate" [(ngModel)] ="employee.hireDate">    
+    <br>
+    <label> <b>Manager Id</b> </label> <br>
+    <input type="number"  name="managerId" [(ngModel)] ="employee.managerId">    
+    <br>          
+    <label> <b>Salary</b> </label> <br>   
+    <input type="number"  name="salary" [(ngModel)] ="employee.salary">  
+    <br><br>  
+    <button type="button" class="btn btn-secondary" >Add</button>
+</form>
+</body>

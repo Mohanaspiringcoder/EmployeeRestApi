@@ -1,0 +1,18 @@
+
+
+<body>
+    <form #department = "ngForm" (ngSubmit) = onSubmit()>
+    <div class="form">
+<label> <b>Employee Id</b> </label> <br>
+    <input type="number" name="employeeNumber" [(ngModel)]="dept.employeeNumber">    
+    <br>   
+    <label> <b>Department</b> </label> <br>
+    <input type="text" name="department" [(ngModel)]="dept.department">    
+    <br> 
+    <label> <b>Salary</b> </label> <br>
+    <input type="number" name="netSalary" [(ngModel)]="dept.netSalary">    
+    <br><br>  
+    <button type="button" class="btn btn-secondary" >Add</button>
+     </div> 
+    </form>
+</body>

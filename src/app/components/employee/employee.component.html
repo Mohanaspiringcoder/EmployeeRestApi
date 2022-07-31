@@ -1,0 +1,22 @@
+<body>
+ <button type="button" class="btn btn-secondary" (click)="addEmployeeDetails()">Add Employees Details</button>
+<br><br>
+<table border="1" >
+    <tr >
+        <th>Employee Id  </th>
+        <th>Employee Name </th>
+        <th> Job  </th>
+        <th>Hire Date  </th>
+        <th>Manager Id </th>
+        <th>Salary</th>
+    </tr>
+    <tr *ngFor="let list of employeesList">
+        <td>{{list.employeeNumber}}</td>
+        <td>{{list.employeeName}}</td>
+        <td>{{list.job}}</td>
+        <td>{{list.hireDate}}</td>
+        <td>{{list.managerId}}</td>
+        <td>{{list.salary}}</td>
+    </tr>
+    </table>
+</body>

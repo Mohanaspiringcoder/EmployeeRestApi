@@ -1,0 +1,18 @@
+
+<body>
+<button type="button" class="btn btn-secondary" (click)="addDepartmentDetails()">Add Department Details</button>
+
+<br><br>
+<table border="1" >
+    <tr >
+        <!-- <th>Employee Id </th> -->
+        <th>Department </th>
+        <!-- <th> Net Salary  </th> -->
+    </tr>
+    <tr *ngFor="let list of employeeDepartmentList">
+        <!-- <td>{{list.employeeNumber}}</td> -->
+        <td>{{list.department}}</td>
+        <!-- <td>{{list.netSalary}}</td> -->
+    </tr>
+    </table>
+</body> 
